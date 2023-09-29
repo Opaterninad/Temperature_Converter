@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(237, 224, 187, 0.817);
+    background-color: rgba(221, 185, 139, 0.817);
     color: #000000;
     font-family: sans-serif;
     display: flex;
@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    background-color: rgba(255, 102, 0, 0.452);
+    background-color: rgba(241, 135, 64, 0.452);
     border-radius: 6px;
     border: 1px solid #000000;
     padding: 20px;
@@ -18,7 +18,21 @@ body {
     max-width: 400px;
     width: 100%;
   }
-  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .symbol {
+    position: absolute;
+    right: -25px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    
+  }
   form label,
   form input {
     display: block;
@@ -30,9 +44,9 @@ body {
     padding: 10px;
     border: 1px solid rgb(131, 132, 129);
   }
-  
+
   form button {
-    width: 100%;
+    width: calc(50% - 5px);
     height: 40px;
     background-color: blue;
     color: white;
@@ -40,14 +54,18 @@ body {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 1px;
+    border-radius: 7px;
   }
   
   form button:hover {
     background-color: #005C2B;
+    transition: 0.25s;
   }
   
   #mensaje {
     margin-top: 20px;
     font-size: 14px;
-}
+    text-align: center;
+  }
+  

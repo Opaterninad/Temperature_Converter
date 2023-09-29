@@ -9,18 +9,29 @@
 </head>
 <body>
     <div class="container">
-        <form id="formulario" onsubmit="calcularIMC(); return false">
-          <label for="celcius">Celcius (°C):</label>
-          <input type="number" id="celcius" >
+        <form id="formulario">
+            <h2>TEMPERATURE CONVERTER</h2>
+        <div class="input-wrapper">
+          <label for="celcius">Celcius:</label>
+          <input step="any" type="number" id="celcius" >
+          <span class="symbol" title="Celsius">°C</span>
+        </div>
           <br>
-          <label for="fahrenheit">Fahrenheit (°F):</label>
-          <input type="number" id="fahrenheit" >
+          <div class="input-wrapper">
+          <label for="fahrenheit">Fahrenheit:</label>
+          <input step="any" type="number" id="fahrenheit" >
+          <span class="symbol" title="Celsius">°F</span>
+        </div>
           <br>
-          <label for="kelvin">Kelvin (K):</label>
-          <input type="number" id="kelvin" >
+          <div class="input-wrapper">
+          <label for="kelvin">Kelvin:</label>
+          <input step="any" type="number" id="kelvin" >
+          <span class="symbol" title="Celsius">K</span>
+        </div>
           <br>
-        </form>
-        <h3 id="mensaje"></h3>
+          <button type="submit" onclick="Mostrarconversion() ; return false">Mostrar Conversión</button>
+          <h3 id="mensaje">""</h3>
+        </form>   
     </div>
     <script src="main.js"></script>
 </body>

@@ -21,3 +21,17 @@ document.getElementById("kelvin").addEventListener("input", function() {
     let celkel = kelvin - 273.15;
     document.getElementById("celcius").value = celkel.toFixed(2);
 })
+function Mostrarconversion() {
+    let kelcon = parseFloat(document.getElementById("kelvin").value).toFixed(2);
+    let fahcon = parseFloat(document.getElementById("fahrenheit").value).toFixed(2);
+    let celcon = parseFloat(document.getElementById("celcius").value).toFixed(2);
+
+if (kelcon ==="NaN" | fahcon ==="NaN" | celcon ==="NaN" ){
+  mensaje.textContent = `Coloca un número correcto.`
+  mensaje.style.color = "red";
+}
+else {
+    mensaje.textContent = `Las conversiones quedan así: Celcius: ${celcon} 
+    °C, Fahrenheit: ${fahcon} °F, Kelvin: ${kelcon} K`;
+    mensaje.style.color = "green";
+}}
