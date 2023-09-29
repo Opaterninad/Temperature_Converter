@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="png/icon.png">
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" onsubmit="calcularIMC(); return false">
+          <label for="celcius">Celcius (°C):</label>
+          <input type="number" id="celcius" >
+          <br>
+          <label for="fahrenheit">Fahrenheit (°F):</label>
+          <input type="number" id="fahrenheit" >
+          <br>
+          <label for="kelvin">Kelvin (K):</label>
+          <input type="number" id="kelvin" >
+          <br>
+        </form>
+        <h3 id="mensaje"></h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
