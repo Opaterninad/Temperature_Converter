@@ -27,11 +27,11 @@ function Mostrarconversion() {
     let celcon = parseFloat(document.getElementById("celcius").value).toFixed(2);
 
 if (kelcon ==="NaN" | fahcon ==="NaN" | celcon ==="NaN" ){
-  mensaje.textContent = `Coloca un número correcto.`
+  mensaje.textContent = `Por favor, coloca un número a convertir.`
   mensaje.style.color = "red";
 }
 else {
     mensaje.textContent = `Las conversiones quedan así: Celcius: ${celcon} 
-    °C, Fahrenheit: ${fahcon} °F, Kelvin: ${kelcon} K`;
+    °C, Fahrenheit: ${fahcon} °F Y Kelvin: ${kelcon} K.`;
     mensaje.style.color = "green";
 }}
